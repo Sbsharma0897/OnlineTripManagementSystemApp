@@ -7,23 +7,23 @@
 <li>An developement of RESTful API for an application. This API performs all the fundamental CRUD operations of any with user validation at every step.
 <br>
 
-
 <!-- ============================================  AUTHOR ======================================================  -->
 
-<li>Project Video Link -https://drive.google.com/file/d/1fAA6Vi47TtHuhecQt9XlN2xwFlOR9qTx/view
+Author - [@Sandeep Sharma](https://www.linkedin.com/in/sbsharma0897)
+ 
 <!-- ============================================  FEATURES ======================================================  -->
 
   
 ## Features
 
-* Customer, Driver and Admin authentication & validation with session uuid having.
+* Customer and Admin authentication & validation with session uuid having.
 * Admin Features:
     * Administrator Role of the entire application
-    * Only registered admins with valid session token can add/update/delete driver or customer from main database
-    * Admin can access the details of different customers, drivers and trip bookings
+    * Only registered admins with valid session token can add/update/delete customer from main database
+    * Admin can access the details of different customers and trip bookings
 * Customer Features:
     * Registering themselves with application, and logging in to get the valid session token
-    * Viewing list of available cabs and booking a trip
+    * Viewing list of available buses, packages, hotels and booking a trip
     * Only logged in user can access his trip history, profile updation and other features.
 
 <!-- ============================================  CONTRIBUTORS ======================================================  -->
@@ -46,6 +46,7 @@
 * Spring Boot
 * Spring Data JPA
 * Hibernate
+* Maven
 * MySQL
 
 <!-- ============================================  MODULES ======================================================  -->
@@ -71,8 +72,7 @@ The following Diagram depicts the flow of our Entity Relation Diagram to simplif
 <br>
 <br>
   
-  
-[Schema.pdf](https://github.com/raus376/OnlineTripManagementSystemApp/files/9695069/Schema.pdf)
+ <img src='https://user-images.githubusercontent.com/101464018/201532557-608c199c-53cb-4b82-91d6-a5313da04eef.png'/>
 
 
 <br>
@@ -82,7 +82,7 @@ The following Diagram depicts the flow of our Entity Relation Diagram to simplif
 
 ## Installation & Run
 
-* Before running the API server, you should update the database config inside the [application.properties](E-Commerce-Backend\src\main\resources\application.properties) file. 
+* Before running the API server, you should update the database config inside the [application.properties](OnlineTripManagementSystemApplication/src/main/resources/application.properties) file. 
 * Update the port number, username and password as per your local database config.
 
 ```
@@ -99,6 +99,6 @@ The following Diagram depicts the flow of our Entity Relation Diagram to simplif
 
 ## API Root Endpoint
 
-`https://localhost:8888/`
+`http://localhost:8888/`
 
 `http://localhost:8888/swagger-ui/`
